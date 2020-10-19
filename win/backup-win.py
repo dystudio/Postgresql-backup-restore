@@ -67,7 +67,7 @@ if dbparam == 'dev_all':
             f.write(content)
     with open('dev_all_backup.bat', 'w') as f:
         content = ('@echo off' + '\n'
-                   + 'for /f "tokens=* delims=" %%a in (\' dir /b /s %~dp0\\1047_*.bat^| find /v "1047_all"\') do ( call %%a)' + '\n')
+                   + 'for /f "tokens=* delims=" %%a in (\' dir /b /s %~dp0\\dev_*.bat^| find /v "dev_all"\') do ( call %%a)' + '\n')
         f.write(content)
 else:
     badkup_bat_path = dbparam + '.bat'

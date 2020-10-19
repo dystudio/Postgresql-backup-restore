@@ -66,7 +66,7 @@ if dbparam == 'dev_all':
             f.write(content)
     with open('dev_all_backup.sh', 'w') as f:
         content_all = ('#/bin/bash' + '\n'
-                       + 'for i in  `ls 1047* | grep -v 1047_all`;' + '\n'
+                       + 'for i in  `ls dev* | grep -v dev_all`;' + '\n'
                        + 'do' + '\n'
                        + ' source ./$i' + '\n'
                        + 'done' + '\n'
