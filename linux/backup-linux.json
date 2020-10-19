@@ -1,0 +1,16 @@
+{
+    "dev_keycloak": {
+        "host": "a.yoursite.com",
+        "port": "5432",
+        "database": "keycloak",
+        "username": "keycloak",
+        "password": "123456"
+    },
+    "dev_masterdata": {
+        "host": "b.yoursite.com",
+        "port": "5432",
+        "database": "master",
+        "username": "master",
+        "password": "123456"
+    }
+}
